@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+
+<div id="canvas"></div>
+<div id="home-content">
+
+  
+
+  {% for post in site.posts %}
+  	  	  	<div class="item {{ post.hpclass }} ">
+
+  	{% if post.hpimg == null %}
+      {{ post.content }}
+  {% else %}
+      <img src="/images/{{ post.hpimg}}" />
+   {% endif %}
+ 
+    </div>
+
+{% endfor %}
+
+  
+</div>
+
+

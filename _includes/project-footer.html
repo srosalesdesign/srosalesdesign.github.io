@@ -1,0 +1,45 @@
+<footer>
+  
+
+<div class="index">
+
+{% capture projects %}{{ page.collection }}{% endcapture %}
+
+{% if page.collection %}
+  {% assign document = site[projects] | sort: 'order' %%}
+{% endif %}
+
+
+
+{% for links in document %}
+  {% if links.title == page.title %}
+    {% unless forloop.first %}
+      {% assign prevurl = prev.url %}
+      {% assign prevtitle = prev.title %}
+    {% endunless %}
+    {% unless forloop.last %}
+      {% assign next = document[forloop.index] %}
+      {% assign nexttitle = next.title %}
+      {% assign nexturl = next.url %}
+    {% endunless %}
+  {% endif %}
+  {% assign prev = links %}
+{% endfor %}
+
+
+ 
+
+{% if prevurl %}<p class="title-prev"><a href="{{ prevurl }}"> << <span> previous</span></a></p>{% endif %}
+<p class="contents"><a href="/projects">Projects</a></p>
+{% if nexturl %}<p class="title-next"><a href="{{ nexturl }}"><span>next </span> >></a></p>{% endif %}
+
+<script>
+/* post pagination keyboard shortcuts */
+document.body.onkeyup = function(e){
+  if (e.keyCode == '37') { window.location = '{{ prevurl }}'; } // left arrow key
+  if (e.keyCode == '39') { window.location = '{{ nexturl }}'; } // right arrow key
+};
+</script></div>
+
+
+</footer>

@@ -1,0 +1,22 @@
+<header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+          <nav class="site-nav">
+  <ul>
+
+      {% for link in site.links %}
+      <li>
+        <a class="page-link" href="{{link.url}}">{{link.title}}</a>
+      </li>
+      {% endfor %}
+
+  </ul>
+</nav>
+  </div>
+</header>
+
+<div id="branding">
+  <div class="brand"><h1><a class="switch" href="/index">S</a></h1></div>
+
+</div>

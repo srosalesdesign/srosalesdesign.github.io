@@ -1,0 +1,66 @@
+---
+layout: default
+---
+
+
+<div id="home-content">
+
+  <section id="intro">
+
+  <div class="about"><h1>Hello, I'm <!-- <a href="https://www.google.com/search?q=sandra+rosales&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiJncfC8uTWAhUjllQKHTLuDNUQ_AUICygC&biw=1620&bih=876">-->Sandra Rosales<!--</a>-->, a digital designer + coder based in Los Angeles.</h1> </div>
+
+</section>
+<section id ="featured-posts">
+
+  {% assign sorted_posts = site.posts | sort:"hporder" %}
+{% for post in sorted_posts %}
+
+
+
+  	  	  	<div class="item">
+     <div class="detail {{ post.hpwidth }} {{ post.hppos }}">
+
+  	{% if post.hpimg == null %}
+      {{ post.content }}
+  {% else %}
+
+
+     <a href="{{post.plink}}"><img src="/images/{{ post.hpimg}}" class="{{post.itemclass}}" /></a>
+
+
+
+   {% endif %}
+       </div>
+
+    </div>
+
+{% endfor %}
+
+  
+
+</section>
+
+<section id = "vis-feed">
+	
+
+
+	  {% for post in site.posts %}
+
+	   {% if post.category == "featured" %}
+        {% else if %}
+
+	  <div class="item {{ post.hpclass }} ">
+
+		  	{% if post.hpimg == null %}
+		      {{ post.content }}
+		  {% else %}
+		      <img src="/images/{{ post.hpimg}}" />
+		   {% endif %}
+ 
+    </div>
+       {% endif %}
+
+
+{% endfor %}
+
+</section>
