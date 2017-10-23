@@ -117,6 +117,14 @@
 .slick-dotted.slick-slider
 {
     margin-bottom: 30px;
+
+}
+
+.slick-dotted.slick-slider:hover {
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
 }
 
 .slick-dots

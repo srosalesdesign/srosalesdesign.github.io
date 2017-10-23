@@ -22,7 +22,14 @@
 /* End Site Header */
 
 #branding {
+position: fixed;
+    top: -50px;
+    z-index: 99;
   left: 121px;
+}
+
+.brand {
+  top: 30px;
 }
 
 
@@ -108,6 +115,14 @@
   font-size: 8em;
 }
 
+
+.slick-slider:hover {
+  cursor: grab;
+}
+
+.slick-dots {
+  bottom: -40px!important;
+}
 
 
 } /** End Media Query **/

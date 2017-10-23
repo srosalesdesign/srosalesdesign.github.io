@@ -14,7 +14,7 @@ projectsimg: /images/amanda-faye.png
 order: 4
 size-class: three-col
 desc-pos: right
-bg: rgb(255,107,134);
+bg: rgb(253,138,159);
 note: Coming Soon.
 
 

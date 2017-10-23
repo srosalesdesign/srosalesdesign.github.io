@@ -23,7 +23,8 @@ $(window).on('scroll', function () {
 $(document).ready(function(){
   $('.items').slick({
     arrows: false,
-    dots: true
+    dots: true,
+
   });
 
 
@@ -38,22 +39,31 @@ $(document).ready(function(){
     });
 
 
-          $(window).scroll(function() {
 
-    if(jQuery(this).scrollTop() > 100)
+    
+$(window).bind("load resize scroll",function(e){
 
-      {
-
-      $("a.switch").text("☺").addClass("face").fadeIn();
+    if ($(window).width() > 768) {      
 
 
-    }
-    else {
+        if(jQuery(this).scrollTop() > 100)
+
+            {
+
+
+
+            $("a.switch").text("☺").addClass("face").fadeIn();
+
+
+        }
+          else {
     // scroll up
       $("a.switch").text("S").removeClass("face");
 
 
       }
+
+    }
 
       });
 

@@ -23,7 +23,7 @@ desc-pos: right
 
 	 </div>
   <div>
-	 <img src="/images/three-emails.jpg" />
+	 <img src="/images/dermalogica-landings.gif" />
 	 </div>
   </div>
 
