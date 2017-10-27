@@ -275,9 +275,9 @@ video { width: 100%    !important; height: auto   !important; }
   .slick-slider:hover { cursor: grab; }
   .slick-dots { bottom: -25px !important; }
   .page-content { padding-top: 55px 0 30px; }
-  .page-content .wrapper { padding-top: 215px; }
   .close h1 { font-size: 5em; }
-  .info h1.e-info { font-size: 3em; } }
+  .info h1.e-info { font-size: 3em; }
+  .projects .page-content .wrapper { padding-top: 215px; } }
 /** End Media Query **/
 /** Syntax highlighting styles */
 .highlight { background: #fff; }
