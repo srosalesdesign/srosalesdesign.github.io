@@ -4,7 +4,10 @@
 var parallaxElements = $('.item'),
     parallaxQuantity = parallaxElements.length;
 
-$(window).on('scroll', function () {
+$(window).bind("load resize scroll",function(e){
+
+      if ($(window).width() > 768) {      
+
 
   window.requestAnimationFrame(function () {
 
@@ -17,6 +20,7 @@ $(window).on('scroll', function () {
       });
     }
   });
+}
 
 });
 
@@ -24,6 +28,7 @@ $(document).ready(function(){
   $('.items').slick({
     arrows: false,
     dots: true,
+
 
   });
 

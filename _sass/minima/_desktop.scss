@@ -22,15 +22,27 @@
 /* End Site Header */
 
 #branding {
-position: fixed;
-    top: -50px;
-    z-index: 99;
-  left: 121px;
+      width: 25%;
+      position: fixed;
+      top: -10px;
+      z-index: 99;
+      left: 121px;
+
+  h1 {
+  font-size: 15em;
 }
+
+}
+
 
 .brand {
   top: 30px;
 }
+
+
+.site-nav {
+      justify-content: flex-end;
+    }
 
 
 /** Home **/
@@ -85,7 +97,7 @@ position: fixed;
 
 
   #home-content {
-    padding-top: 0;
+    padding-top: 115px;
   }
 
   #intro {
@@ -103,12 +115,39 @@ position: fixed;
     h1 {
 
     font-size: 1.6em;
+    text-align: left;
 
     }
 
   }
 
 }
+
+.twenty {
+    width: 20%;
+  }
+
+   .twenty-five {
+    width: 25%;
+  }
+
+
+  .thirty {
+    width: 30%;
+  }
+
+  .forty {
+    width: 40%;
+  }
+
+  .fifty {
+    width: 50%;
+  }
+
+  .seventy {
+    width: 70%;
+  }
+
 
 
 .jumbo {
@@ -121,7 +160,31 @@ position: fixed;
 }
 
 .slick-dots {
-  bottom: -40px!important;
+  bottom: -25px!important;
+}
+
+
+.page-content {
+  padding-top: 55px 0 30px;
+
+
+    .wrapper {
+    padding-top: 215px;
+    }
+}
+
+
+
+
+.close h1 {
+  font-size: 5em;
+
+}
+
+.info {
+  h1.e-info {
+    font-size: 3em;
+  }
 }
 
 

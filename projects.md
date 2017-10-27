@@ -42,6 +42,7 @@ permalink: /projects/
  
   </div>
 </div>
+
 </div>
 <div class="project-description {{ project.desc-pos }}">
 
