@@ -108,13 +108,15 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 45%;
-    left: 25%;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+
     }
 
     h1 {
 
-    font-size: 1.6em;
+    font-size: 3em;
     text-align: left;
 
     }
@@ -159,14 +161,11 @@
   cursor: grab;
 }
 
-.slick-dots {
-  bottom: -25px!important;
-}
+
 
 
 .page-content {
-  padding-top: 55px 0 30px;
-
+height: 100vh;
 
     
 }

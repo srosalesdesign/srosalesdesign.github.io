@@ -202,11 +202,11 @@ video { width: 100%    !important; height: auto   !important; }
 
 .project-image { background: #000; box-shadow: 0.5rem 0.5rem 1rem rgba(17, 17, 17, 0.5); }
 
-.vid-wrapper, .img-wrap, .work { padding: 15px; }
+.vid-wrapper, .img-wrap, .work { padding: 0; }
 
 @media screen and (min-width: 1024px) { .project-item { min-height: 85vh; position: relative; margin: 0 auto 3em; }
   .project-main { padding: 30px; }
-  .vid-wrapper, .img-wrap, .work { padding: 30px; }
+  .vid-wrapper, .img-wrap, .work { padding: 0; }
   .project-description { width: 20%; position: absolute; top: 50%; right: 3em !important; transform: translateY(-50%); }
   .one-col { width: 33%; }
   .two-col { width: 45%; }
@@ -247,6 +247,8 @@ video { width: 100%    !important; height: auto   !important; }
 
 .slick-dots { bottom: -40px !important; }
 
+.slick-dots li.slick-active button:before { color: blue; }
+
 @media screen and (min-width: 1024px) { /** Site header */
   .site-header .wrapper { width: 80%; padding-top: 10px; }
   /* End Site Header */
@@ -263,8 +265,8 @@ video { width: 100%    !important; height: auto   !important; }
   .home .post .item-content { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
   .home #home-content { padding-top: 115px; }
   .home #intro { height: 55vh; }
-  .home #intro .about { position: absolute; top: 50%; transform: translateY(-50%); width: 45%; left: 25%; }
-  .home #intro h1 { font-size: 1.6em; text-align: left; }
+  .home #intro .about { position: absolute; top: 50%; transform: translateY(-50%); width: 80%; left: 50%; transform: translateX(-50%); }
+  .home #intro h1 { font-size: 3em; text-align: left; }
   .twenty { width: 20%; }
   .twenty-five { width: 25%; }
   .thirty { width: 30%; }
@@ -273,8 +275,7 @@ video { width: 100%    !important; height: auto   !important; }
   .seventy { width: 70%; }
   .jumbo { font-size: 8em; }
   .slick-slider:hover { cursor: grab; }
-  .slick-dots { bottom: -25px !important; }
-  .page-content { padding-top: 55px 0 30px; }
+  .page-content { height: 100vh; }
   .close h1 { font-size: 5em; }
   .info h1.e-info { font-size: 3em; }
   .projects .page-content .wrapper { padding-top: 215px; } }

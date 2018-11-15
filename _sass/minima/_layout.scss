@@ -639,7 +639,7 @@ video {
 }
 
 .vid-wrapper, .img-wrap, .work {
-  padding: $spacing-unit /2;
+  padding: 0;
 }
 
 
@@ -660,7 +660,7 @@ video {
 }
 
 .vid-wrapper, .img-wrap, .work{
-  padding: $spacing-unit;
+  padding: 0;
 }
 
 .project-description {
@@ -777,6 +777,11 @@ video {
 
 .slick-dots {
   bottom: -40px!important;
+}
+
+.slick-dots li.slick-active button:before  {
+  color: blue;
+
 }
 
 
