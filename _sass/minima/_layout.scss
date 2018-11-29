@@ -404,7 +404,8 @@
 
 video {
     width: 100%    !important;
-  height: auto   !important;
+    position: absolute;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(17, 17, 17, 0.5)
     }
 
 
@@ -640,6 +641,11 @@ video {
 
 .vid-wrapper, .img-wrap, .work {
   padding: 0;
+
+}
+
+.vid-wrapper {
+  position: relative;
 }
 
 
@@ -777,6 +783,11 @@ video {
 
 .slick-dots {
   bottom: -40px!important;
+}
+
+.slick-dots li {
+  width: 10px!important;
+  height: 10px!important;
 }
 
 .slick-dots li.slick-active button:before  {

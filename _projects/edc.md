@@ -7,7 +7,7 @@ category: design + code
 tags: design, front-end development, wordpress
 description: Design and development for corporate website.
 status: active
-projectvid: /images/edc.mp4
+projectvid: /images/edc-3.mp4
 order: 5
 size-class: three-col
 desc-pos: right

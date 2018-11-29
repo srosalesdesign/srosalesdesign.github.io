@@ -147,7 +147,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .post-content h4 { font-size: 20px; }
 @media screen and (min-width: 1024px) { .post-content h4 { font-size: 18px; } }
 
-video { width: 100%    !important; height: auto   !important; }
+video { width: 100%    !important; position: absolute; box-shadow: 0.5rem 0.5rem 1rem rgba(17, 17, 17, 0.5); }
 
 /** Home **/
 .post-row { min-height: calc(100vh - 150px); }
@@ -204,6 +204,8 @@ video { width: 100%    !important; height: auto   !important; }
 
 .vid-wrapper, .img-wrap, .work { padding: 0; }
 
+.vid-wrapper { position: relative; }
+
 @media screen and (min-width: 1024px) { .project-item { min-height: 85vh; position: relative; margin: 0 auto 3em; }
   .project-main { padding: 30px; }
   .vid-wrapper, .img-wrap, .work { padding: 0; }
@@ -246,6 +248,8 @@ video { width: 100%    !important; height: auto   !important; }
 .slider-indicators { position: relative; height: 30px; }
 
 .slick-dots { bottom: -40px !important; }
+
+.slick-dots li { width: 10px !important; height: 10px !important; }
 
 .slick-dots li.slick-active button:before { color: blue; }
 

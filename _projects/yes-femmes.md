@@ -8,7 +8,6 @@ tags: design, front-end development, creative direction, animation, transitions,
 description: Online queer lit and art journal, featuring video, performance and experimental text. 
 status: active
 hpimg: ss-december-2015.jpg
-projectvid: /images/yesfemmes-video.mp4
 order: 1
 size-class: three-col
 desc-pos: right
@@ -22,7 +21,19 @@ custom-url: http://yesfemmes.com
 <article class="work" itemscope itemtype="http://schema.org/BlogPosting">
 
 		
-  <div class="vid-wrapper">
-  <video src="/images/yf-issue-landing.mp4" autoplay loop="true"></video>
+  <div class="items">
+  <div>
+	 <img src="/images/yesfemmes-1.gif" />
+	 </div>
+  <div>
+	 <img src="/images/yes-femmes-2.jpg" />
+
+	 </div>
+  <div>
+	 <img src="/images/yes-femmes-3.jpg" />
+	 </div>
+	 <div>
+	 <img src="/images/yes-femmes-4.jpg" />
+	 </div>
   </div>
 </article>
