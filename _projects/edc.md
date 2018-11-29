@@ -5,7 +5,7 @@ date-added: 2016
 type: website design + dev
 category: design + code
 tags: design, front-end development, wordpress
-description: Design and development for corporate website.
+description: Design and development for international entertain design company.
 status: active
 projectvid: /images/edc-3.mp4
 order: 5
